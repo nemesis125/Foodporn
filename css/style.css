@@ -2,7 +2,6 @@ html, body {
     background-color: #fff;    
     font-family: 'Amatic SC', 'Arial', sans-serif;
     font-size: 40px;
-    font-display: 
     color: #000;
     }
 
@@ -16,6 +15,14 @@ body {
     background-attachment: fixed;
 }
 
+.content {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 h1 {
     font-size: 80px;
 }
@@ -26,6 +33,14 @@ h2 {
 
 h3 {
     font-size: 60px;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+    float: right;
+    margin-top: -15px;
+    margin-left: 20px;
 }
 
 .pill-nav a {
@@ -47,4 +62,5 @@ h3 {
     background-color: dodgerblue;
     color: white;
   }
+
 
