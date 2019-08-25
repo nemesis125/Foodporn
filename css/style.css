@@ -1,0 +1,50 @@
+html, body {
+    background-color: #fff;    
+    font-family: 'Amatic SC', 'Arial', sans-serif;
+    font-size: 40px;
+    font-display: 
+    color: #000;
+    }
+
+body {
+    /* Background-Images are placed in the img-folder inside the css-folder */
+    background-image: linear-gradient(rgba(240, 223, 223, 0.7), rgba(0, 0, 0, 0.7)), url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    /* Fill whole viewport with image 100vh means 100% of the viewport */
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 60px;
+}
+
+.pill-nav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 80px;
+    border-radius: 5px;
+  }
+  
+  .pill-nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .pill-nav a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
