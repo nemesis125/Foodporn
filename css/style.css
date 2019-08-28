@@ -1,30 +1,50 @@
+/* --------------------------------------- */
+/* FONT AND BACKGROUND SETTINGS */
+/* --------------------------------------- */
 html, body {
     background-color: #fff;    
     font-family: 'Amatic SC', 'Arial', sans-serif;
     font-size: 40px;
-    color: #000;
-    }
+    color:rgb(247, 246, 131);
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+}
 
+/* --------------------------------------- */
+/* FONT AND BACKGROUND SETTINGS END*/
+/* --------------------------------------- */
+
+
+
+/* --------------------------------------- */
+/* Background */
+/* --------------------------------------- */
 body {
-    /* Background-Images are placed in the img-folder inside the css-folder */
-    background-image: linear-gradient(rgba(240, 223, 223, 0.7), rgba(0, 0, 0, 0.7)), url(img/background.jpg);
+    background-image: linear-gradient(rgba(250, 240, 240, 0.7), rgba(0, 0, 0, 0.7)), url(img/background.jpg);
     background-size: cover;
     background-position: center;
-    /* Fill whole viewport with image 100vh means 100% of the viewport */
-    height: 100vh;
+    /* Background scrollt mit*/
     background-attachment: fixed;
+    background-repeat: no-repeat;    
 }
+/* --------------------------------------- */
+/* BACKGROUND END */
+/* --------------------------------------- */
+
+
 
 .content {
     position: absolute;
     width: auto;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 h1 {
     font-size: 80px;
+    margin-top: 2000px;
 }
 
 h2 {
@@ -35,32 +55,123 @@ h3 {
     font-size: 60px;
 }
 
+
+
+/* --------------------------------------- */
+/* LOGO */
+/* --------------------------------------- */
 .logo {
-    height: 200px;
-    width: auto;
-    float: right;
-    margin-top: -15px;
-    margin-left: 20px;
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin-top: -30px;
+    margin-left: -30px;
+    position: fixed;
 }
+/* --------------------------------------- */
+/* LOGO END */
+/* --------------------------------------- */
 
-.pill-nav a {
+
+
+/* --------------------------------------- */
+/* NAVIGATION */
+/* --------------------------------------- */
+* {
+    box-sizing: border-box;
+  }
+ 
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+    
+  .nav > .nav-links {
+    display: inline;
     float: right;
-    color: black;
-    text-align: center;
-    padding: 14px;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    margin-left: -220px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
     text-decoration: none;
-    font-size: 80px;
-    border-radius: 5px;
+    color: rgb(43, 128, 244);
+    
   }
   
-  .pill-nav a:hover {
-    background-color: #ddd;
-    color: black;
+  .nav > .nav-links > a:hover {
+    background-color: rgba(247, 246, 131, 0.3);
   }
   
-  .pill-nav a.active {
-    background-color: dodgerblue;
-    color: white;
+  .nav > #nav-check {
+    display: none;
   }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
 
+/* NAVIGATION HAMBURGER*/
 
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+}
+/* --------------------------------------- */
+/* NAVIGATION END */
+/* --------------------------------------- */
