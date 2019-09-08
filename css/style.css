@@ -9,30 +9,18 @@ html, body {
     text-align: center;
     width: auto;
     margin: 0 auto;
-}
-
-/* --------------------------------------- */
-/* FONT AND BACKGROUND SETTINGS END*/
-/* --------------------------------------- */
-
-
-
-/* --------------------------------------- */
-/* Background */
-/* --------------------------------------- */
-body {
-    background-image: linear-gradient(rgba(250, 240, 240, 0.7), rgba(0, 0, 0, 0.7)), url(img/background.jpg);
+    background-image: linear-gradient(rgba(250, 240, 240, 0.7), 
+    rgba(0, 0, 0, 0.7)), url(img/background.jpg);
     background-size: cover;
     background-position: center;
     /* Background scrollt mit*/
     background-attachment: fixed;
     background-repeat: no-repeat;    
 }
-/* --------------------------------------- */
-/* BACKGROUND END */
-/* --------------------------------------- */
 
-
+/* --------------------------------------- */
+/* FONT AND BACKGROUND SETTINGS END*/
+/* --------------------------------------- */
 
 .content {
     position: absolute;
@@ -55,18 +43,14 @@ h3 {
     font-size: 60px;
 }
 
-
-
 /* --------------------------------------- */
 /* LOGO */
 /* --------------------------------------- */
 .logo {
-    height: 150px;
-    width: 150px;
-    float: left;
-    margin-top: -30px;
-    margin-left: -30px;
-    position: fixed;
+    display: grid;
+    height: 80px;
+    width: 100px;
+    margin-top: 40px;
 }
 /* --------------------------------------- */
 /* LOGO END */
@@ -77,19 +61,15 @@ h3 {
 /* --------------------------------------- */
 /* NAVIGATION */
 /* --------------------------------------- */
-* {
-    box-sizing: border-box;
-  }
+
  
   .nav > .nav-header {
     display: inline;
   }
   
   .nav > .nav-header > .nav-title {
-    display: inline-block;
     font-size: 40px;
     color: #fff;
-    padding: 10px 10px 10px 10px;
   }
   
   .nav > .nav-btn {
@@ -97,18 +77,20 @@ h3 {
   }
     
   .nav > .nav-links {
-    display: inline;
-    float: right;
+    display: grid;
     font-size: 40px;
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.3);
-    position: fixed;
-    margin-left: -220px;
-  }
+    grid-template-columns: repeat(6, 100px);
+    grid-auto-rows: 50px;
+    align-items: center;
+    text-align: center;
+
+    }
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 13px 10px 13px 0px;
     text-decoration: none;
     color: rgb(43, 128, 244);
     
@@ -116,25 +98,38 @@ h3 {
   
   .nav > .nav-links > a:hover {
     background-color: rgba(247, 246, 131, 0.3);
+    height: 39px;
+		transform:translateY( -8px);
+    
   }
   
   .nav > #nav-check {
     display: none;
   }
   
-  @media (max-width:600px) {
+  @media (max-width:800px) {
+
+    .logo {
+      display: inline-block;
+      height: 80px;
+      width: 100px;
+      
+      
+  }
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
       right: 0px;
-      top: 0px;
+      top: 0px;      
     }
+
     .nav > .nav-btn > label {
       display: inline-block;
       width: 50px;
       height: 50px;
       padding: 13px;
     }
+    
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
       background-color: rgba(0, 0, 0, 0.3);
     }
@@ -146,7 +141,7 @@ h3 {
       width: 25px;
       height: 10px;
       border-top: 2px solid #eee;
-    }
+  }
 
     .nav > .nav-links {
       position: absolute;
