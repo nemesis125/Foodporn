@@ -30,9 +30,17 @@ html, body {
     transform: translate(-50%, -50%);
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-top: 1000px;
+  background-color: rgba(250, 240, 240, 0.7)
+}
+
 h1 {
     font-size: 80px;
-    margin-top: 2000px;
+
 }
 
 h2 {
@@ -85,22 +93,20 @@ h3 {
     grid-auto-rows: 50px;
     align-items: center;
     text-align: center;
-
+    position:fixed;
     }
   
   .nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 0px;
     text-decoration: none;
-    color: rgb(43, 128, 244);
-    
+    color: rgb(43, 128, 244);    
   }
   
   .nav > .nav-links > a:hover {
     background-color: rgba(247, 246, 131, 0.3);
     height: 39px;
-		transform:translateY( -8px);
-    
+		transform:translateY( -8px);    
   }
   
   .nav > #nav-check {
@@ -111,14 +117,11 @@ h3 {
 
     .logo {
       display: inline-block;
-      height: 80px;
-      width: 100px;
-      
-      
-  }
+    }
+    
     .nav > .nav-btn {
       display: inline-block;
-      position: absolute;
+      position: fixed;
       right: 0px;
       top: 0px;      
     }
@@ -136,11 +139,11 @@ h3 {
 
 /* NAVIGATION HAMBURGER*/
 
-    .nav > .nav-btn > label > span {
+    .hamburger {
       display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
+      width: 30px;
+      height: 30px;
+      position: fixed;      
   }
 
     .nav > .nav-links {
@@ -153,15 +156,18 @@ h3 {
       overflow-y: hidden;
       top: 50px;
       left: 0px;
-      
+      position:fixed;
     }
+
     .nav > .nav-links > a {
       display: block;
       width: 100%;
     }
+
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
+    
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
       overflow-y: auto;
