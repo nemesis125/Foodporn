@@ -25,7 +25,7 @@ html, body {
 .content {
     position: absolute;
     width: auto;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -89,7 +89,7 @@ h3 {
     font-size: 40px;
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.3);
-    grid-template-columns: repeat(6, 100px);
+    grid-template-columns: repeat(5, 100px);
     grid-auto-rows: 50px;
     align-items: center;
     text-align: center;
@@ -106,7 +106,7 @@ h3 {
   .nav > .nav-links > a:hover {
     background-color: rgba(247, 246, 131, 0.3);
     height: 39px;
-		transform:translateY( -8px);    
+		transform:translateY( -8px);
   }
   
   .nav > #nav-check {
@@ -176,3 +176,16 @@ h3 {
 /* --------------------------------------- */
 /* NAVIGATION END */
 /* --------------------------------------- */
+
+/* --------------------------------------- */
+/* SLIDESHOW */
+/* --------------------------------------- */
+
+.slideshow {
+  max-width:500px;
+}
+
+.mySlides {
+  display: none;
+  width:100%;
+}
