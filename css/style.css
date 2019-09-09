@@ -40,7 +40,12 @@ p {
 
 h1 {
     font-size: 80px;
-
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(10, 10, 10, 0.7);
+    font-size:8vw;
 }
 
 h2 {
@@ -57,8 +62,7 @@ h3 {
 .logo {
     display: grid;
     height: 80px;
-    width: 100px;
-    
+    width: 100px;    
 }
 /* --------------------------------------- */
 /* LOGO END */
@@ -94,6 +98,7 @@ h3 {
     align-items: center;
     text-align: center;
     position:fixed;
+    margin: 0;
     }
   
   .nav > .nav-links > a {
@@ -184,12 +189,12 @@ h3 {
 
 .slideshow {
   position: absolute;
-  max-width: 100%;
-  height: auto;
-  padding: 20px;
-  top: 10%;
-  }
-
+  max-width: auto;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
+  
 .mySlides {
   display: none;
   width:100%;
