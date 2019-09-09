@@ -41,11 +41,11 @@ p {
 h1 {
     font-size: 80px;
     position: absolute;
-    top: 38%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(10, 10, 10, 0.7);
-    font-size:8vw;
+    font-size:5vw;
 }
 
 h2 {
@@ -92,13 +92,14 @@ h3 {
     display: grid;
     font-size: 60px;
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 80px;
     align-items: center;
     text-align: center;
     position:fixed;
     margin: 0;
+    z-index:100;
     }
   
   .nav > .nav-links > a {
@@ -127,8 +128,13 @@ h3 {
     .nav > .nav-btn {
       display: inline-block;
       position: fixed;
+      margin: 0;
+      width: 50px;
+      height: 50px;
       right: 0px;
-      top: 0px;      
+      top: 0px;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 10;      
     }
 
     .nav > .nav-btn > label {
@@ -178,6 +184,7 @@ h3 {
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
+    
 }
 /* --------------------------------------- */
 /* NAVIGATION END */
@@ -193,9 +200,30 @@ h3 {
   top: 40%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%) }
+  transform: translate(-50%, -50%);
+}
   
 .mySlides {
   display: none;
   width:100%;
 }
+
+/* --------------------------------------- */
+/* SLIDESHOW */
+/* --------------------------------------- */
+
+/* --------------------------------------- */
+/* VIDEOS */
+/* --------------------------------------- */
+
+.videos {
+  position:absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: auto;
+  top: 100%;
+}
+/* --------------------------------------- */
+/* VIDEOS */
+/* --------------------------------------- */
