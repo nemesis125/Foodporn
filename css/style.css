@@ -67,6 +67,7 @@ h3 {
 
 .logo2 {
   display: none;
+  
 }
 /* --------------------------------------- */
 /* LOGO END */
@@ -123,7 +124,7 @@ h3 {
     display: none;
   }
   
-  @media (max-width:800px) {
+  @media (max-width:700px) {
 
     .logo {
       display: inline-block;
@@ -134,6 +135,7 @@ h3 {
       justify-content: center; 
       align-items: center;    
       margin-top: 20px; 
+      
       }
 
     .nav > .nav-btn {
@@ -154,9 +156,7 @@ h3 {
       padding: 13px;
     }
     
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
+
 
 /* NAVIGATION HAMBURGER*/
 
@@ -228,13 +228,74 @@ h3 {
 /* VIDEOS */
 /* --------------------------------------- */
 
-.videos {
-  position:absolute;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: auto;
-  top: 100%;
+#video {
+position:absolute;
+top: -150px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery iframe {
+  width: 100%;
+  height: 400px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+div.vidcont {
+position:absolute;
+top: 1000px;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+   }
+   .vidcont {
+    position:absolute;
+    top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+   }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /* --------------------------------------- */
 /* VIDEOS */
