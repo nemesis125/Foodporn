@@ -4,7 +4,7 @@
 html, body {
     background-color: #fff;    
     font-family: 'Amatic SC', 'Arial', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     color:rgb(247, 246, 131);
     text-align: center;
     width: auto;
@@ -42,13 +42,13 @@ p {
 h1 {
     font-size: 80px;
     position: absolute;
-    top: 31%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(10, 10, 10, 0.7);
-    color: rgb(43, 128, 244);
-    font-size:5vw;
-}
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(10, 10, 10, 0.7);
+  color: rgb(43, 128, 244);
+  font-size: calc(1em + 1vw)
+   }
 
 h2 {
     font-size: 70px;
@@ -186,7 +186,7 @@ h3 {
       top: 50px;
       left: 0px;
       position:fixed;
-      z-index: 1;
+      z-index: 10;
     }
 
     .nav > .nav-links > a {
@@ -213,17 +213,41 @@ h3 {
 /* --------------------------------------- */
 
 .slideshow {
-  position: absolute;
-  max-width: auto;
-  top: 35%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 150px;
+  left: 0;
+  right: 0;
+  max-width: 1500px;
+  width: auto;
+  height: auto;
+}
+
+.slideshow > h1 {
+  position: center;  
+  background-color: rgba(10, 10, 10, 0.7);
+  color: rgb(43, 128, 244);
+  font-size: calc(1em + 1vw)
 }
   
 .mySlides {
   display: none;
   width:100%;
+}
+
+@media (max-width:700px) {
+
+  .slideshow > h1 {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(10, 10, 10, 0.7);
+    color: rgb(43, 128, 244);
+    font-size: calc(0.7em + 1vw)
+  }
+
 }
 
 /* --------------------------------------- */
@@ -269,8 +293,8 @@ div.desc {
 }
 
 div.vidcont {
-position:absolute;
-top: 1000px;
+position: relative;;
+top: 700px;
 margin-left: auto;
 margin-right: auto;
 left: 0;
@@ -322,12 +346,12 @@ right: 0;
 }
 
 div.reccont {
-    position: absolute;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 1940px;
+    top: 1250px;
 }
 
 .card {
@@ -362,7 +386,7 @@ div.reccont {
   padding: 10px;
   transition: 250ms;
   font-weight: bold;
-  z-index: 10;
+  z-index: 9;
 }
 
 a.btn:hover {
@@ -374,7 +398,7 @@ a.btn:hover {
 @media only screen and (max-width: 700px) {
   .recipe {
     background: #fff;
-    width: 100%;
+    width: 50%;
     box-shadow: 0px 0px 30px 2px #000;
     padding: 6px;
     float: left;
@@ -386,7 +410,7 @@ a.btn:hover {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 2300px;
+    top: 2500px;
 }
 
 }
@@ -426,7 +450,7 @@ div.reccont > #footer {
   text-align: center;
   color: rgb(43, 128, 244);
   font-weight: bold;
-  top: 100px;  
+  top: 300px;  
   
 }
 
